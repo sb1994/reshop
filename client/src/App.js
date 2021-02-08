@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React from "react";
+import "./App.css";
 const App = () => {
-  useEffect(async () => {
-    let { data } = await axios.get("/api/products/test");
-    console.log(data);
-  }, []);
   return (
-    <div>
-      <h1>App</h1>
+    <div className="container">
+      <h1 className="container__primary-heading">Hello</h1>
     </div>
   );
 };
