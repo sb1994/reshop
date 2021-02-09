@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 const App = () => {
   return (
-    <div className="container">
-      <h1 className="container__primary-heading">Hello</h1>
+    <div>
+      <h1>This could be the day</h1>
     </div>
   );
 };
