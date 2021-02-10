@@ -1,9 +1,11 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
-export const CheckoutScreen = () => {
+const CheckoutScreen = () => {
   return (
     <div>
-      <h1>CheckoutScreen</h1>
+      <h1>CheckoutScreens</h1>
     </div>
   );
 };
+export default CheckoutScreen;

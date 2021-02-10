@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --primary: #ff4545;
+  --white: #fff;
+  --black: #222;
+  --grey1: #3a3b3c;
+  --grey2: #828282;
+}
+
 html {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 * {
@@ -10,4 +18,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.navbar-bg {
+  background: var(--white);
 }

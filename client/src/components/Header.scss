@@ -1,0 +1,35 @@
+:root {
+  --primary: #ff4545;
+  --white: #fff;
+  --black: #222;
+  --grey1: #3a3b3c;
+  --grey2: #828282;
+}
+
+.header {
+  background-color: var(--white);
+
+  &__border-shadow {
+    -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  &__logo {
+    border: var(--black) solid 3px;
+
+    span {
+      color: var(--primary);
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.5rem;
+    }
+  }
+  &__nav-link span {
+    color: var(--black);
+    font-size: 1.3rem;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
