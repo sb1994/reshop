@@ -1,0 +1,138 @@
+:root {
+  --primary: #ff4545;
+  --white: #fff;
+  --black: #222;
+  --grey1: #3a3b3c;
+  --grey2: #828282;
+}
+
+.product-card {
+  cursor: pointer;
+  &:hover {
+    .product-card__overlay {
+      left: 70%;
+      opacity: 1;
+      transition: 0.5s ease;
+    }
+    .product-card__btn-cart {
+      border-radius: 10px;
+
+      &:hover {
+        background-color: var(--primary);
+
+        i {
+          color: var(--white);
+          // font-size: 2rem;
+        }
+      }
+    }
+    .btn-search:hover {
+      background-color: var(--primary);
+      border-radius: 10px;
+      i {
+        color: var(--white);
+      }
+    }
+    .btn-like:hover {
+      background-color: var(--primary);
+      border-radius: 10px;
+      i {
+        color: var(--white);
+      }
+    }
+  }
+
+  &__img-container {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+  &__overlay {
+    position: absolute;
+    padding: 1rem;
+    top: 0%;
+    left: 100%;
+    height: 70%;
+    width: 30%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.5s ease;
+    opacity: 0;
+
+    .product-card__btn {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      padding: 1rem;
+      position: relative;
+      height: 20px;
+      width: 20px;
+
+      outline: none;
+      border: none;
+      background-color: #ddd;
+      padding: 1rem;
+    }
+  }
+  &__cart-input-overlay {
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 70%;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .product-card__btn-cart {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      padding: 1.5rem;
+      position: relative;
+      background-color: #ddd;
+      border: none;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  &__product-name-link {
+    color: var(--black);
+
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  &__product-name-link {
+    color: var(--black);
+
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  &__product-price {
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+}
+i {
+  position: absolute;
+  font-size: large;
+  color: black;
+  left: 23%;
+  top: 25%;
+}
