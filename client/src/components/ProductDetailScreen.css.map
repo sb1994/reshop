@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,sCAAwB,CAAC;EACvB,MAAM,EAAE,OAAO;CAChB;;AAEA,AAAD,4BAAc,CAAC;EACb,aAAa,EAAE,EAAE;CAClB;;AACA,AAAD,yBAAW,CAAC;EACV,aAAa,EAAE,EAAE;CAClB",
+    "sources": [
+        "ProductDetailScreen.scss"
+    ],
+    "names": [],
+    "file": "ProductDetailScreen.css"
+}

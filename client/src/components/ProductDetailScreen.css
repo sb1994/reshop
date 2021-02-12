@@ -1,0 +1,12 @@
+.product-detail__preview-img-container {
+  cursor: pointer;
+}
+
+.product-detail__preview-img {
+  border-radius: 5%;
+}
+
+.product-detail__main-img {
+  border-radius: 5%;
+}
+/*# sourceMappingURL=ProductDetailScreen.css.map */

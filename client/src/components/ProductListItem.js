@@ -16,14 +16,12 @@ const ProductListItem = ({ product }) => {
     (item) => item.id === product._id
   );
   const handleShowProduct = () => {
-    history.push(`/products/${product._id}`);
+    history.push(`/${product._id}`);
   };
   const handleLikeProduct = () => {
     console.log("this needs to be done");
   };
   const handleAddToCart = () => {
-    console.log("this needs to be done");
-    console.log(productAlreadyAddedToCart);
     dispatch(addProductToCart(product));
   };
   const handleRemoveFromCart = () => {

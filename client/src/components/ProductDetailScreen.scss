@@ -1,0 +1,12 @@
+.product-detail {
+  &__preview-img-container {
+    cursor: pointer;
+  }
+
+  &__preview-img {
+    border-radius: 5%;
+  }
+  &__main-img {
+    border-radius: 5%;
+  }
+}
