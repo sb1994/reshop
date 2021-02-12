@@ -8,7 +8,14 @@
 
 .header {
   background-color: var(--white);
+  height: 80px;
 
+  // &__nav-link-cart {
+  //   margin: 0.5rem 1rem 0 0;
+  //   padding: 0.5rem 1rem 0 0;
+  //   text-align: center;
+  //   position: relative;
+  // }
   &__border-shadow {
     -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
@@ -30,6 +37,40 @@
 
     &:hover {
       color: var(--primary);
+    }
+  }
+  &__nav-link-cart {
+    // position: relative;
+    font-size: 1.2rem;
+
+    .header__cart-icon {
+      color: var(--black);
+      position: relative;
+      right: 1;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    &:hover span {
+      color: var(--primary);
+      .header__nav-link-cart--number {
+        // position: absolute;
+
+        // display: flex;
+        color: var(--primary);
+        // border-radius:px;
+      }
+    }
+
+    &--number {
+      // position: absolute;
+      height: 20px;
+      top: 0;
+      left: 90%;
+      width: 20px;
+      // display: flex;
+      color: var(--primary);
+      // border-radius:px;
     }
   }
 }

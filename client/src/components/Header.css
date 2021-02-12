@@ -8,6 +8,7 @@
 
 .header {
   background-color: var(--white);
+  height: 80px;
 }
 
 .header__border-shadow {
@@ -32,6 +33,36 @@
 }
 
 .header__nav-link span:hover {
+  color: var(--primary);
+}
+
+.header__nav-link-cart {
+  font-size: 1.2rem;
+}
+
+.header__nav-link-cart .header__cart-icon {
+  color: var(--black);
+  position: relative;
+  right: 1;
+}
+
+.header__nav-link-cart .header__cart-icon:hover {
+  color: var(--primary);
+}
+
+.header__nav-link-cart:hover span {
+  color: var(--primary);
+}
+
+.header__nav-link-cart:hover span .header__nav-link-cart--number {
+  color: var(--primary);
+}
+
+.header__nav-link-cart--number {
+  height: 20px;
+  top: 0;
+  left: 90%;
+  width: 20px;
   color: var(--primary);
 }
 /*# sourceMappingURL=Header.css.map */
