@@ -19,6 +19,7 @@ import "./App.css";
 
 import store from "../store";
 import Header from "./Header";
+import { AnimatePresence } from "framer-motion";
 
 if (localStorage.cart) {
   //checking if there is already products in the cart
@@ -33,27 +34,29 @@ const App = () => {
   return (
     <>
       <Header />
-      <Container style={{ height: "100vh" }}>
-        <Switch location={location} key={location.key}>
-          <Route exact path="/">
-            <LandingScreen />
-          </Route>
-          <Route path="/login">
-            <LoginScreen />
-          </Route>
-          <Route path="/cart">
-            <CartScreen />
-          </Route>
-          <Route path="/register">
-            <RegisterScreen />
-          </Route>
-          <Route exact path="/products" component={ProductsListScreen} />
+      <AnimatePresence>
+        <Container style={{ height: "100vh" }}>
+          <Switch location={location} key={location.key}>
+            <Route exact path="/">
+              <LandingScreen />
+            </Route>
+            <Route path="/login">
+              <LoginScreen />
+            </Route>
+            <Route path="/cart">
+              <CartScreen />
+            </Route>
+            <Route path="/register">
+              <RegisterScreen />
+            </Route>
+            <Route exact path="/products" component={ProductsListScreen} />
 
-          <Route exact path="/checkout" component={CheckoutScreen} />
+            <Route exact path="/checkout" component={CheckoutScreen} />
 
-          <Route exact path="/:id" component={ProductsDetailScreen} />
-        </Switch>
-      </Container>
+            <Route exact path="/:id" component={ProductsDetailScreen} />
+          </Switch>
+        </Container>
+      </AnimatePresence>
     </>
   );
 };

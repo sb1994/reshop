@@ -1,0 +1,12 @@
+:root {
+  --primary: #ff4545;
+  --white: #fff;
+  --black: #222;
+  --grey1: #3a3b3c;
+  --grey2: #828282;
+}
+
+.btn-buy {
+  background-color: var(--primary);
+}
+/*# sourceMappingURL=ProductsScreenDetail.css.map */

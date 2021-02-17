@@ -52,7 +52,7 @@ const ProductListItem = ({ product }) => {
               className="btn btn-lg product-card__btn-cart mb-2"
               onClick={handleAddToCart}
             >
-              <i class="fa fa-cart-arrow-down"></i>
+              <i class="fa fa-cart-plus"></i>
             </button>
           ) : (
             <button

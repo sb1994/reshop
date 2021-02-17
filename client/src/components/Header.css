@@ -11,6 +11,10 @@
   height: 80px;
 }
 
+.header__nav {
+  background-color: var(--white);
+}
+
 .header__border-shadow {
   -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);

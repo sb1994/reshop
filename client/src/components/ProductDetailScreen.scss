@@ -1,3 +1,10 @@
+:root {
+  --primary: #ff4545;
+  --white: #fff;
+  --black: #222;
+  --grey1: #3a3b3c;
+  --grey2: #828282;
+}
 .product-detail {
   &__preview-img-container {
     cursor: pointer;
@@ -8,5 +15,16 @@
   }
   &__main-img {
     border-radius: 5%;
+  }
+  &__title {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &__price {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
   }
 }

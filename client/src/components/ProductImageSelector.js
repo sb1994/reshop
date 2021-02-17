@@ -19,18 +19,20 @@ const ProductImageSelector = ({ images }) => {
   return (
     <>
       <Row>
-        <Col className="product-detail__main-img-section" lg={12}>
+        <Col className="product-detail__main-img-section " lg={12}>
           <img
             src={previewImages[currentImgIndex]}
             alt=""
             className="img-fluid product-detail__main-img"
           />
         </Col>
-        <Col lg={12} className="mt-3">
+        <Col lg={12} className="mt-3 p-3">
           <Row>
             {previewImages.map((img, index) => (
               <Col
                 lg={3}
+                sm={3}
+                xs={3}
                 className="product-detail__preview-img-container"
                 onClick={() => setCurrentImg(index)}
               >

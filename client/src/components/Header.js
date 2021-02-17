@@ -48,8 +48,8 @@ const Header = () => {
               href="/cart"
             >
               <span className="header__nav-link-cart--number">
-                <span className="fas fa-cart-plus header__cart-icon"></span>(
-                {cart.cart.length})
+                <span className="fas fa-shopping-cart header__cart-icon"></span>
+                ({cart.cart.length})
               </span>
             </Nav.Link>
             <Nav.Link className="header__nav-link" href="/login">
