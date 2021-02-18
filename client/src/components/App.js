@@ -35,7 +35,7 @@ const App = () => {
     <>
       <Header />
       <AnimatePresence>
-        <Container style={{ height: "100vh" }}>
+        <Container>
           <Switch location={location} key={location.key}>
             <Route exact path="/">
               <LandingScreen />

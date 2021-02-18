@@ -3,7 +3,10 @@ import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import ProductListItem from "../components/ProductListItem";
+import ProductsFilter from "../components/ProductsFilter";
+import ProductsPagination from "../components/ProductsPagination";
 
+import "./ProductsListScreen.css";
 //reducer action
 import { getProducts } from "../store/actions/products";
 const ProductsListScreen = () => {
@@ -45,7 +48,14 @@ const ProductsListScreen = () => {
       exit="exit"
       className="row products mt-5"
     >
-      <Col xs={12}>Search Filter</Col>
+      <Col lg={12} className="products__filter-text-section">
+        <ProductsFilter />
+      </Col>
+
+      <Col xs={12} className="mb-3">
+        <ProductsPagination />
+      </Col>
+
       <Col xs={12}>
         <Row>
           {loading ? (
@@ -71,8 +81,9 @@ const ProductsListScreen = () => {
           )}
         </Row>
       </Col>
-      <Col xs={12}>Products</Col>
-      <Col xs={12}>Page Pagination</Col>
+      <Col xs={12}>
+        <ProductsPagination />
+      </Col>
     </motion.div>
   );
 };

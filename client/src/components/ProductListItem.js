@@ -40,10 +40,10 @@ const ProductListItem = ({ product }) => {
             className="btn-primary btn-lg btn product-card__btn btn-search mb-2"
             onClick={handleShowProduct}
           >
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </button>
           <button className="btn-primary btn-lg btn product-card__btn btn-like mb-2">
-            <i class="far fa-heart"></i>
+            <i className="far fa-heart"></i>
           </button>
         </div>
         <div className="product-card__cart-input-overlay">
@@ -52,14 +52,14 @@ const ProductListItem = ({ product }) => {
               className="btn btn-lg product-card__btn-cart mb-2"
               onClick={handleAddToCart}
             >
-              <i class="fa fa-cart-plus"></i>
+              <i className="fa fa-cart-plus"></i>
             </button>
           ) : (
             <button
               className="btn btn-lg product-card__btn-cart product-card__btn-cart--active  mb-2"
               onClick={handleRemoveFromCart}
             >
-              <i class="fas fa-shopping-cart"></i>
+              <i className="fas fa-shopping-cart"></i>
             </button>
           )}
         </div>
