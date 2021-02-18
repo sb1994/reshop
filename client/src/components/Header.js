@@ -52,9 +52,6 @@ const Header = () => {
                 ({cart.cart.length})
               </span>
             </Nav.Link>
-            <Nav.Link className="header__nav-link" href="/login">
-              <span>Login</span>
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -7,8 +7,6 @@ import { setProductFilterText } from "../store/actions/products";
 const ProductsFilter = () => {
   const dispatch = useDispatch();
   const handleFilterText = (e) => {
-    console.log(e.target.value);
-
     dispatch(setProductFilterText(e.target.value));
   };
 
