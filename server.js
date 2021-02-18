@@ -23,6 +23,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
   });
 }
+console.log(db);
 mongoose.connect(
   db,
   {
