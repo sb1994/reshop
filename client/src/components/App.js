@@ -37,9 +37,10 @@ const App = () => {
       <AnimatePresence>
         <Container>
           <Switch location={location} key={location.key}>
-            <Route exact path="/">
+            <Route exact path="/" component={ProductsListScreen} />
+            {/* <Route exact path="/">
               <LandingScreen />
-            </Route>
+            </Route> */}
             <Route path="/login">
               <LoginScreen />
             </Route>
@@ -49,7 +50,6 @@ const App = () => {
             <Route path="/register">
               <RegisterScreen />
             </Route>
-            <Route exact path="/products" component={ProductsListScreen} />
 
             <Route exact path="/checkout" component={CheckoutScreen} />
 

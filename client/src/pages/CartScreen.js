@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import CartListItems from "../components/CartListItems";
 import "./CartScreen.css";
 import { returnTotalPrice } from "../utils/functions";
+import CartTotal from "../components/CartTotal";
 const CartScreen = () => {
   const cartVariants = {
     hidden: {
@@ -81,23 +82,7 @@ const CartScreen = () => {
         {/* <CartTotal cart={cart.cart} /> */}
         <Col lg={4} className="mt-3 cart__total">
           <Row className="pt-3">
-            <Col lg={6} xs={6}>
-              <p className="cart__total-text">Total:</p>
-            </Col>
-            <Col lg={6} xs="6" style={{ textAlign: "right" }}>
-              <span className="cart__total-value">€{totalPrice}</span>
-            </Col>
-            <Col lg={12} xs="12" className="mb-3">
-              <button className="btn cart__total-btn-checkout  btn-block">
-                Proceed To Checkout
-              </button>
-              <Link
-                to="/products"
-                className="btn cart__total-btn-continue-shopping  btn-block"
-              >
-                Continue Shopping
-              </Link>
-            </Col>
+            <CartTotal cart={cart.cart} />
           </Row>
         </Col>
       </Row>
